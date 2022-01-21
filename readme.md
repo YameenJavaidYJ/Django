@@ -40,3 +40,6 @@ we will make our products app using (manage.py startapp)
 we will run the server
 -> python manage.py run
 -> copy the address (127.0.0.1:8000) open in the browser
+
+once on the browser for the first time login to administrator side
+
