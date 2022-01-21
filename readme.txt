@@ -7,7 +7,7 @@ firstofall activate the virtual environemnt
 We will be creating a reports project that will further contain django-apps inside
 
 start project
--> djangoadmin start project reports_proj
+-> django-admin startproject reports_proj
 
 move reports_proj into a src folder as per django directory standards
 -> mv reports_proj src
@@ -38,7 +38,7 @@ we will make our products app using (manage.py startapp)
 -> python manage.py startapp products
 
 we will run the server
--> python manage.py run
+-> python manage.py runserver
 -> copy the address (127.0.0.1:8000) open in the browser
 
 once on the browser for the first time login to administrator side
