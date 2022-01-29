@@ -38,15 +38,16 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     # our apps
-    'customers'
-    'products'
-    'profiles'
-    'reports'
-    'sales'
+    'customers',
+    'products',
+    'profiles',
+    'reports',
+    'sales',
     # 3rd party
-    'crispy forms'
-    
+    'crispy_forms',
 ]
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -63,7 +64,7 @@ ROOT_URLCONF = 'reports_proj.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR]/'templates',
+        'DIRS': [BASE_DIR/'templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -127,14 +128,11 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = '/static/'
-STATICFILES_DIR = [
+STATICFILES_DIRS = [
     BASE_DIR / 'static',
 ]
-
 MEDIA_URL = '/media/'
-MEDIA_DIR = [
-    BASE_DIR / 'media',
-]
+MEDIA_ROOT = BASE_DIR / 'media'
 
 
 
