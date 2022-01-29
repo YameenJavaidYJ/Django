@@ -76,3 +76,13 @@ adding these URL patterns
     
     urlpatterns += static(settings.STATIC_URL, document_root=STATIC_ROOT)
     urlpatterns += static(settings.MEDIA_URL, document_root=media_ROOT)
+
+block scripts
+    syntax
+    -> {% block scripts %}
+    -> {% endblock scripts %}
+    when templates inherit from html files it opens the block scripts
+
+Implementing Models:
+    -> Customer model implemented
+    -> admin.py admin.site.register(Customer)
